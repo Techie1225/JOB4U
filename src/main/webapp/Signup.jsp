@@ -8,31 +8,28 @@
 <%@include file="all_components/all_css.jsp"%>
 <%response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate"); %>
 <style>
-.bg-img{
-background-image: url('img/tri-colour.jpg');
-	
-	height: 100%;
-	background-repeat: no-repeat; 
-	background-size: cover;	
-	opacity:0.5;
-}
 .card{
 border-radius:50px 50px;
 border:0px;
-opacity:1;
-
 }
+body{
+overflow: hidden;
+}
+.form-control{
+border-style:none none solid none;
+}
+
 </style>
 </head>
-<body style="background-color: #f0f1f2;">
+<body>
 	<%@include file="all_components/nav_bar.jsp"%>
 	<div class="continer-fluid bg-img">
 		<c:if test="${not empty succMsg1 }">
 			<h4 class="text-center text-danger">${succMsg1 }</h4>
 			<c:remove var="succMsg1" />
 		</c:if>
-		<div class="row p-5">
-			<div class="col-md-6 offset-md-3">
+		<div class="row">
+			<div class="col-md-5 offset-md-3">
 				<div class="card">
 					<div class="card-body">
 						<div class="text-center">
@@ -43,21 +40,21 @@ opacity:1;
 
 						<form action="signup" method="post">
 							<div class="form-group">
-								<label>Enter Full Name</label> <input type="text"
+								<label>Full Name</label> <input type="text"
 									required="required" class="form-control"
 									id="exampleInputEmail1" aria-describedby="emailHelp"
 									name="name">
 							</div>
 
 							<div class="form-group">
-								<label>Enter Your Qualification</label> <input type="text"
+								<label>Qualification</label> <input type="text"
 									required="required" class="form-control"
 									id="exampleInputEmail1" aria-describedby="emailHelp"
 									name="qualification">
 							</div>
 
 							<div class="form-group">
-								<label>Enter Email</label> <input type="email"
+								<label>Email</label> <input type="email"
 									required="required" class="form-control"
 									id="exampleInputEmail1" aria-describedby="emailHelp"
 									name="email" value="@gmail.com">
@@ -65,7 +62,7 @@ opacity:1;
 
 							<div class="form-group">
 
-								<label for="password">Enter Password</label>
+								<label for="password">Password</label>
 								<div class="card rounded-0">
 									<div class="input-group " id="show_hide_password">
 										<input required="required" type="password"
@@ -81,7 +78,7 @@ opacity:1;
 							</div>
 
 							<div class="form-group">
-								<label>Enter Designation</label> <input type="text"
+								<label>Designation</label> <input type="text"
 									required="required" class="form-control"
 									id="exampleInputEmail1" aria-describedby="emailHelp"
 									name="designation">

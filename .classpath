@@ -35,30 +35,10 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/User/.m2/repository/org/mortbay/jetty/jetty/6.1.22/jetty-6.1.22.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/User/Desktop/NTSPBMS615/javazoom jars/WEB-INF/lib/cos.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/User/Desktop/NTSPBMS615/javazoom jars/WEB-INF/lib/fileupload.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/User/Desktop/NTSPBMS615/javazoom jars/WEB-INF/lib/struts.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/User/Desktop/NTSPBMS615/javazoom jars/WEB-INF/lib/uploadbean.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/grees/.m2/repository/org/mortbay/jetty/jetty/6.1.22/jetty-6.1.22.jar"/>
+	<classpathentry kind="lib" path="C:/Softwares/java zoom/uploadbean1.9/WEB-INF/lib/cos.jar"/>
+	<classpathentry kind="lib" path="C:/Softwares/java zoom/uploadbean1.9/WEB-INF/lib/fileupload.jar"/>
+	<classpathentry kind="lib" path="C:/Softwares/java zoom/uploadbean1.9/WEB-INF/lib/struts.jar"/>
+	<classpathentry kind="lib" path="C:/Softwares/java zoom/uploadbean1.9/WEB-INF/lib/uploadbean.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

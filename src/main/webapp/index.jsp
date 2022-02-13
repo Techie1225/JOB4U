@@ -13,7 +13,7 @@
 .back-img {
 	background-image: url('img/images.jpeg');
 	 width: 100%;
-height: 84.2vh;
+height: 85.5vh;
 	background-repeat: no-repeat; 
 	background-size: cover;
 }

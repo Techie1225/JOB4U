@@ -1,7 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page isELIgnored="false"%>
+
+<style>
+.bg-custom{
+background-color: #234e9b;
+}
+</style>
 <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
-	<a class="navbar-brand" href="#">Navbar</a>
+	<a class="navbar-brand" href="#"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
 		data-target="#navbarSupportedContent"
 		aria-controls="navbarSupportedContent" aria-expanded="false"
