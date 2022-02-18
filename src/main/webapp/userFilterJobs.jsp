@@ -123,10 +123,8 @@ margin-top:8px;
 							Publish Date:
 							<%=j.getPdate()%></h6>
 						<div class="text-center ">
-							<a href="edit_job.jsp?id=<%=j.getId()%>"
-								class="btn btn-sm bg-success text-white">Edit</a> <a
-								href="delete?id=<%=j.getId()%>"
-								class="btn btn-sm bg-danger text-white">Delete</a>
+							<a href="ApplyJob.jsp"						
+								class="btn btn-sm bg-success text-white">Apply</a> 
 
 						</div>
 					</div>

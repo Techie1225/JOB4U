@@ -11,11 +11,14 @@
 <%@include file="all_components/all_css.jsp"%>
 <style type="text/css">
 .back-img {
-	background-image: url('img/images.jpeg');
+	background-image: url('img/images (7).jpeg');
 	 width: 100%;
 height: 85.5vh;
 	background-repeat: no-repeat; 
 	background-size: cover;
+}
+h1{
+color: white;
 }
 </style>
 

@@ -12,9 +12,9 @@
 border-radius:50px 50px;
 border:0px;
 }
-body{
+/* body{
 overflow: hidden;
-}
+} */
 .form-control{
 border-style:none none solid none;
 }
