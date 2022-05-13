@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +28,7 @@ background-image: url('img/login.jpg');
 </style>
 </head>
 <body style="background-color: #f0f1f2;">
-	<%@include file="all_components/nav_bar.jsp"%>
+<%-- 	<%@include file="all_components/nav_bar.jsp"%>  --%>
 	<div class="continer-fluid bg-img">
 		<c:if test="${not empty succMsg }">
 			<h4 class="text-center text-success">${succMsg }</h4>

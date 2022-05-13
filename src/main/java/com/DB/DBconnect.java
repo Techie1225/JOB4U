@@ -11,8 +11,10 @@ public class DBconnect {
 	{
 		try {
 			if(conn1==null) {
-				Class.forName("oracle.jdbc.driver.OracleDriver");
-				conn1=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","chitti");
+				Class.forName("com.mysql.jdbc.Driver");
+				//conn1=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","chitti");
+				//conn1=DriverManager.getConnection("jdbc:mysql://node7340-env-6169095.sp.skdrive.net/user","root","EEXkfq46278");
+				conn1=DriverManager.getConnection("jdbc:mysql://localhost:3306/chitti","root","chitti");
 			}
 		}catch(Exception e) {
 			e.printStackTrace();

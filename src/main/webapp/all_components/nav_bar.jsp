@@ -3,10 +3,10 @@
 
 <style>
 .bg-custom{
-background-color: #234e9b;
+background-color: #010206;
 }
 </style>
-<nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+<nav class="navbar navbar-expand-lg bg-custom">
 	<a class="navbar-brand" href="#"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
 		data-target="#navbarSupportedContent"
