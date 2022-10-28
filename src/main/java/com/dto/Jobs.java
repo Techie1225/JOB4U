@@ -1,5 +1,9 @@
 package com.dto;
 
+import java.sql.Date;
+
+
+
 public class Jobs {
 	private int id;
 	private String title;
@@ -7,7 +11,7 @@ public class Jobs {
 	private String category;
 	private String status;
 	private String location;
-	private String pdate;
+	private Date pdate;
 	private String name;
 	
 	public Jobs() {
@@ -15,14 +19,14 @@ public class Jobs {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Jobs(String title, String description, String category, String status, String location, String pdate) {
+	public Jobs(String title, String description, String category, String status, String location, Date  pdate) {
 		super();
 		this.title = title;
 		this.description = description;
 		this.category = category;
 		this.status = status;
 		this.location = location;
-		this.pdate = pdate;
+		this.pdate=pdate;
 	}
 	public int getId() {
 		return id;
@@ -60,16 +64,19 @@ public class Jobs {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	public String getPdate() {
-		return pdate;
-	}
-	public void setPdate(String pdate) {
-		this.pdate = pdate;
-	}
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public Date getPdate() {
+		return pdate;
+	}
+
+	public void setPdate(Date pdate) {
+		this.pdate = pdate;
+	}
+	
 }

@@ -66,7 +66,7 @@ public class FilterServlet extends HttpServlet {
 				j.setCategory(rs.getString(3));
 				j.setStatus(rs.getString(4));
 				j.setLocation(rs.getString(5));
-				j.setPdate(rs.getString(6));
+				j.setPdate(rs.getDate(6));
 				j.setName(rs.getString(7));
 				list.add(j);
 			}

@@ -40,6 +40,7 @@ response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
 				ApplyDao dao = new ApplyDao(DBconnect.getconn());
 				// 				HttpSession session = request.getSession(false);
 				String name = (String) session.getAttribute("name");
+				System.out.println(name);
 
 				if (name == null) {
 					session.setAttribute("succMsg1", "Session timed out, pls login again");
@@ -47,6 +48,7 @@ response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
 				}
 				List<Apply> list = dao.getAllAppliedJobs(name);
 				for (Apply j : list) {
+					System.out.println("fghj");
 				%>
 				<div class="card mt-2">
 					<div class="card-body">

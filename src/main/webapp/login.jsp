@@ -63,10 +63,6 @@ body {
 				<div class="text-center">
 					<!-- 							<i class="fa fa-user-plus fa-2x" aria-hidden="true"></i> -->
 					<h1 style="color: #007bff">JOBS4U</h1>
-
-
-
-					<br> <br>
 				</div>
 				<div class="row">
 					<div class="col-md-6 offset-md-3">
@@ -118,7 +114,7 @@ body {
 									</center>
 
 									<hr>
-									<br>
+									
 
 								</form>
 								<center>

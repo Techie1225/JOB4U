@@ -1,6 +1,9 @@
 package com.Servlet;
 
 import java.io.IOException;
+import java.sql.Timestamp;
+import java.util.Calendar;
+import java.sql.Date;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -20,6 +23,7 @@ public class PostJobServlet extends HttpServlet{
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("PostJobServlet.doPost()");
 		try {
 			String title=req.getParameter("title");
 			String location=req.getParameter("location");
@@ -41,6 +45,9 @@ public class PostJobServlet extends HttpServlet{
 			j.setStatus(status);
 			j.setDescription(desc);
 			j.setName(name);
+			java.util.Date utilDate = new java.util.Date();
+			java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
+			j.setPdate(sqlDate);
 			
 
 			JobDao dao=new JobDao(DBconnect.getconn());

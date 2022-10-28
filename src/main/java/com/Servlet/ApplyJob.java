@@ -1,11 +1,8 @@
 package com.Servlet;
 
 import java.io.IOException;
-import java.sql.Date;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-
 import java.util.Vector;
 
 import javax.servlet.ServletException;
@@ -14,8 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import org.apache.commons.collections.bag.SynchronizedSortedBag;
 
 import com.DB.DBconnect;
 import com.dao.ApplyDao;
@@ -53,7 +48,10 @@ public class ApplyJob extends HttpServlet {
 			String role = nreq.getParameter("role");
 			String address =nreq.getParameter("add");
 			String collegeName = nreq.getParameter("cname");
+			System.out.println("owner :: "+session.getAttribute("owner"));
+//			String owner ="xyz";
 			String owner = (String) session.getAttribute("owner");
+			
 			int count=0;
 			System.out.println("====================="+dateOfBirth);
 			UploadBean upb = new UploadBean();

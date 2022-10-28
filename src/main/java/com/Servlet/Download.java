@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.tomcat.util.http.fileupload.IOUtils;
+
 
 @WebServlet("/downloadurl")
 public class Download extends HttpServlet {
@@ -47,7 +47,7 @@ public class Download extends HttpServlet {
 		 //create OuputStream pointing to response object
 		 OutputStream os=res.getOutputStream();  // byte stream is taken to deal with both text, non-text content
 		 //copy file content to response obj  (this compltes file donwloading
-		 IOUtils.copy(is,os);
+		 org.apache.commons.io.IOUtils.copy(is,os);
 		 //close sreams
 		 is.close();
 		 os.close();

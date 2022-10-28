@@ -4,6 +4,8 @@
 <%@page import="java.sql.Connection"%>
 <%@page import="com.DB.DBconnect"%>
 <%@page import="java.util.List"%>
+<%@page import="java.text.SimpleDateFormat"%>
+
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -70,9 +72,13 @@
 
 							</div>
 						</div>
-						<h6>
-							Publish Date:
-							<%=j.getPdate()%></h6>
+					 <%SimpleDateFormat formatter=new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");
+							String date=formatter.format(j.getPdate());
+							%>
+						 <h6>
+							Publish Date : 
+							
+							<%=date%></h6> 
 						<div class="text-center ">
 							<a href="edit_job.jsp?id=<%=j.getId()%>"
 								class="btn btn-sm bg-success text-white">Edit</a> <a
